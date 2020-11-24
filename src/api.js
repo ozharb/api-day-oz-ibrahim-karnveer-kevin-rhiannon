@@ -48,7 +48,7 @@ const getItems = function () {
   };
 
 function updateItem(id, updateDataArg){
-    const updateData = JSON.stringify({updateDataArg})
+    const updateData = JSON.stringify(updateDataArg)
     return listApiFetch(`${BASE_URL}/items/${id}`, {
         method: 'PATCH',
         headers: {
